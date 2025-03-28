@@ -1,0 +1,78 @@
+<!-- <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Caja Registradora</title>
+</head>
+<body>
+    <h2>Caja Registradora</h2>
+    <button onclick="cajaRegistradora()">Iniciar Compra</button>
+
+    <script>
+        function cajaRegistradora() {
+            let total = 0;
+            let seguir = "si";
+            
+            while (seguir === "si") {
+                let producto = prompt("Ingrese el nombre del producto:");
+                let precio = prompt("Ingrese el precio del producto:");
+
+                precio = Number(precio); 
+
+                if (precio > 0) {
+                    total = total + precio; 
+                    alert("Producto agregado: " + producto + " - Precio: $" + precio);
+                } else {
+                    alert("Precio inválido, intente de nuevo.");
+                }
+
+                seguir = prompt("¿Tiene más artículos? (si/no)");
+            }
+
+            alert("Total a pagar: $" + total);
+        }
+    </script>
+</body>
+</html> -->
+<!-- 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Números Aleatorios</title>
+</head>
+<body>
+
+    <script>
+        function numeroAleatorio() {
+            let num;
+            while (true) {
+                num = Math.floor(Math.random() * 31) + 100; 
+                if (num !== 110 && num !== 115 && num !== 120) {
+                    return num;
+                }
+            }
+        }
+
+        function Numeros() {
+            let esPar = true;
+            let resultado = "numeros generados:\n";
+
+            for (let i = 0; i < 10; i++) {
+                let numero;
+                while (true) {
+                    numero = numeroAleatorio();
+                    if ((numero % 2 === 0) === esPar) {
+                        break;
+                    }
+                }
+
+                resultado += numero + "\n";
+                esPar = !esPar; 
+            }
+
+            alert(resultado);
+        }
+    </script>
+</body>
+</html> -->
